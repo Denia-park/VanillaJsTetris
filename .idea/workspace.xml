@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="df6e665c-0ba0-4622-8688-17377e84e43f" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vanillaJsTetris.iml" afterDir="false" />
+    <list default="true" id="df6e665c-0ba0-4622-8688-17377e84e43f" name="변경" comment=";;;;;;;;;;;;;;;;&#10;; &lt;타입&gt; : &lt;제목&gt; 의 형식으로 제목을 아래 공백줄에 작성&#10;; 제목은 50자 이내 / 변경사항이 &quot;무엇&quot;인지 명확히 작성 / 끝에 마침표 금지&#10;; 예) feat : 로그인 기능 추가&#10;init&#10;; 바로 아래 공백은 지우지 마세요 (제목과 본문의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 본문(구체적인 내용)을 아랫줄에 작성&#10;; 여러 줄의 메시지를 작성할 땐 &quot;-&quot;로 구분 (한 줄은 72자 이내)&#10;&#10;; 바로 아래 공백은 지우지 마세요 (본문과 꼬릿말의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 꼬릿말(footer)을 아랫줄에 작성 (현재 커밋과 관련된 이슈 번호 추가 등)&#10;; 예) Close #7&#10;&#10;;;;;;;;;;;;;;;;;&#10;; feat : 새로운 기능 추가&#10;; fix : 버그 수정&#10;; docs : 문서 수정&#10;; test : 테스트 코드 추가&#10;; refact : 코드 리팩토링&#10;; style : formatting, 코드 의미에 영향을 주지 않는 변경사항&#10;; chore : maintain, 빌드 부분, 패키지 매니저 수정사항&#10;;;;;;;;;;;;;;;;;">
+      <change beforePath="$PROJECT_DIR$/hello.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,11 +19,19 @@
       </list>
     </option>
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectId" id="2QCMcNZOYdPoyZT6djoiXBSLvmU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
@@ -36,12 +42,25 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/phg95/IdeaProjects/Java/Practice/Spring/spring-petclinic",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "actions.on.save",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\phg95\IdeaProjects\JavaScript\Practice\Tetris\vanillaJsTetris" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="디폴트 작업">
@@ -50,11 +69,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684853190406</updated>
-      <workItem from="1684853191402" duration="1000" />
+      <workItem from="1684853191402" duration="775000" />
     </task>
+    <task id="LOCAL-00001" summary=";;;;;;;;;;;;;;;;&#10;; &lt;타입&gt; : &lt;제목&gt; 의 형식으로 제목을 아래 공백줄에 작성&#10;; 제목은 50자 이내 / 변경사항이 &quot;무엇&quot;인지 명확히 작성 / 끝에 마침표 금지&#10;; 예) feat : 로그인 기능 추가&#10;init&#10;; 바로 아래 공백은 지우지 마세요 (제목과 본문의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 본문(구체적인 내용)을 아랫줄에 작성&#10;; 여러 줄의 메시지를 작성할 땐 &quot;-&quot;로 구분 (한 줄은 72자 이내)&#10;&#10;; 바로 아래 공백은 지우지 마세요 (본문과 꼬릿말의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 꼬릿말(footer)을 아랫줄에 작성 (현재 커밋과 관련된 이슈 번호 추가 등)&#10;; 예) Close #7&#10;&#10;;;;;;;;;;;;;;;;;&#10;; feat : 새로운 기능 추가&#10;; fix : 버그 수정&#10;; docs : 문서 수정&#10;; test : 테스트 코드 추가&#10;; refact : 코드 리팩토링&#10;; style : formatting, 코드 의미에 영향을 주지 않는 변경사항&#10;; chore : maintain, 빌드 부분, 패키지 매니저 수정사항&#10;;;;;;;;;;;;;;;;;">
+      <created>1684853445582</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684853445582</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=";;;;;;;;;;;;;;;;&#10;; &lt;타입&gt; : &lt;제목&gt; 의 형식으로 제목을 아래 공백줄에 작성&#10;; 제목은 50자 이내 / 변경사항이 &quot;무엇&quot;인지 명확히 작성 / 끝에 마침표 금지&#10;; 예) feat : 로그인 기능 추가&#10;init&#10;; 바로 아래 공백은 지우지 마세요 (제목과 본문의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 본문(구체적인 내용)을 아랫줄에 작성&#10;; 여러 줄의 메시지를 작성할 땐 &quot;-&quot;로 구분 (한 줄은 72자 이내)&#10;&#10;; 바로 아래 공백은 지우지 마세요 (본문과 꼬릿말의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 꼬릿말(footer)을 아랫줄에 작성 (현재 커밋과 관련된 이슈 번호 추가 등)&#10;; 예) Close #7&#10;&#10;;;;;;;;;;;;;;;;;&#10;; feat : 새로운 기능 추가&#10;; fix : 버그 수정&#10;; docs : 문서 수정&#10;; test : 테스트 코드 추가&#10;; refact : 코드 리팩토링&#10;; style : formatting, 코드 의미에 영향을 주지 않는 변경사항&#10;; chore : maintain, 빌드 부분, 패키지 매니저 수정사항&#10;;;;;;;;;;;;;;;;;" />
+    <option name="LAST_COMMIT_MESSAGE" value=";;;;;;;;;;;;;;;;&#10;; &lt;타입&gt; : &lt;제목&gt; 의 형식으로 제목을 아래 공백줄에 작성&#10;; 제목은 50자 이내 / 변경사항이 &quot;무엇&quot;인지 명확히 작성 / 끝에 마침표 금지&#10;; 예) feat : 로그인 기능 추가&#10;init&#10;; 바로 아래 공백은 지우지 마세요 (제목과 본문의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 본문(구체적인 내용)을 아랫줄에 작성&#10;; 여러 줄의 메시지를 작성할 땐 &quot;-&quot;로 구분 (한 줄은 72자 이내)&#10;&#10;; 바로 아래 공백은 지우지 마세요 (본문과 꼬릿말의 분리를 위함)&#10;&#10;;;;;;;;;;;;;;;;;&#10;; 꼬릿말(footer)을 아랫줄에 작성 (현재 커밋과 관련된 이슈 번호 추가 등)&#10;; 예) Close #7&#10;&#10;;;;;;;;;;;;;;;;;&#10;; feat : 새로운 기능 추가&#10;; fix : 버그 수정&#10;; docs : 문서 수정&#10;; test : 테스트 코드 추가&#10;; refact : 코드 리팩토링&#10;; style : formatting, 코드 의미에 영향을 주지 않는 변경사항&#10;; chore : maintain, 빌드 부분, 패키지 매니저 수정사항&#10;;;;;;;;;;;;;;;;;" />
   </component>
 </project>
