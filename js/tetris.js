@@ -50,15 +50,19 @@ function prependNewLine() {
 }
 
 function seizeBlock() {
-
+    const movingBlocks = document.querySelectorAll(".moving");
+    movingBlocks.forEach(block => {
+        block.classList.remove("moving");
+        block.classList.add("seized");
+    });
 }
 
-function renderBlocks(modeType) {
+function renderBlocks(moveType = "") {
     const {type, direction, top, left} = tempMovingItem;
     const movingBlocks = document.querySelectorAll(".moving");
     movingBlocks.forEach(block => block.classList.remove(type, "moving"));
 
-    BLOCKS[type][direction].forEach(block => {
+    BLOCKS[type][direction].some(block => {
         const x = block[0] + left;
         const y = block[1] + top;
         const target = playground.childNodes[y] ?
@@ -73,7 +77,9 @@ function renderBlocks(modeType) {
                 if (moveType === "top") {
                     seizeBlock();
                 }
-            }, 0)
+            }, 0);
+
+            return true;
         }
     })
     movingItem.left = left;
@@ -82,12 +88,16 @@ function renderBlocks(modeType) {
 }
 
 function checkEmpty(target) {
-    return target;
+    if (!target || target.classList.contains("seized")) {
+        return false;
+    }
+
+    return true;
 }
 
 function moveBlock(moveType, amount) {
     tempMovingItem[moveType] += amount;
-    renderBlocks();
+    renderBlocks(moveType);
 }
 
 function changeDirection() {
