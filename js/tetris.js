@@ -29,7 +29,7 @@ function init() {
     for (let i = 0; i < GAME_ROWS; i++) {
         prependNewLine();
     }
-    renderBlocks();
+    generateNewBlock();
 }
 
 function prependNewLine() {
@@ -84,6 +84,11 @@ function seizeBlock() {
 }
 
 function generateNewBlock() {
+    clearInterval(downInterval);
+    downInterval = setInterval(() => {
+        moveBlock("top", 1);
+    }, duration)
+
     const blockArray = Object.entries(BLOCKS);
     const randomIndex = Math.floor(Math.random() * blockArray.length);
     console.log(blockArray);
