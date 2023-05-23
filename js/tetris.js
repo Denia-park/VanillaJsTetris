@@ -49,14 +49,6 @@ function prependNewLine() {
     playground.prepend(li);
 }
 
-function seizeBlock() {
-    const movingBlocks = document.querySelectorAll(".moving");
-    movingBlocks.forEach(block => {
-        block.classList.remove("moving");
-        block.classList.add("seized");
-    });
-}
-
 function renderBlocks(moveType = "") {
     const {type, direction, top, left} = tempMovingItem;
     const movingBlocks = document.querySelectorAll(".moving");
@@ -85,6 +77,25 @@ function renderBlocks(moveType = "") {
     movingItem.left = left;
     movingItem.top = top;
     movingItem.direction = direction;
+}
+
+function seizeBlock() {
+    const movingBlocks = document.querySelectorAll(".moving");
+    movingBlocks.forEach(block => {
+        block.classList.remove("moving");
+        block.classList.add("seized");
+    });
+
+    generateNewBlock();
+}
+
+function generateNewBlock() {
+    movingItem.top = 0;
+    movingItem.left = 3;
+    movingItem.direction = 0;
+
+    tempMovingItem = {...movingItem};
+    renderBlocks();
 }
 
 function checkEmpty(target) {
