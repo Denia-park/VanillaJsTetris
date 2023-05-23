@@ -13,9 +13,9 @@ let tempMovingItem;
 const BLOCKS = {
     tree: [
         [[2, 1], [0, 1], [1, 0], [1, 1]],
-        [],
-        [],
-        [],
+        [[1, 2], [0, 1], [1, 0], [1, 1]],
+        [[1, 2], [0, 1], [2, 1], [1, 1]],
+        [[2, 1], [1, 2], [1, 0], [1, 1]],
     ]
 }
 
@@ -49,7 +49,11 @@ function prependNewLine() {
     playground.prepend(li);
 }
 
-function renderBlocks() {
+function seizeBlock() {
+
+}
+
+function renderBlocks(modeType) {
     const {type, direction, top, left} = tempMovingItem;
     const movingBlocks = document.querySelectorAll(".moving");
     movingBlocks.forEach(block => block.classList.remove(type, "moving"));
@@ -57,9 +61,28 @@ function renderBlocks() {
     BLOCKS[type][direction].forEach(block => {
         const x = block[0] + left;
         const y = block[1] + top;
-        const target = playground.childNodes[y].childNodes[0].childNodes[x];
-        target.classList.add(type, "moving");
+        const target = playground.childNodes[y] ?
+            playground.childNodes[y].childNodes[0].childNodes[x] : null;
+        const isAvailable = checkEmpty(target);
+        if (isAvailable) {
+            target.classList.add(type, "moving");
+        } else {
+            tempMovingItem = {...movingItem};
+            setTimeout(() => {
+                renderBlocks();
+                if (moveType === "top") {
+                    seizeBlock();
+                }
+            }, 0)
+        }
     })
+    movingItem.left = left;
+    movingItem.top = top;
+    movingItem.direction = direction;
+}
+
+function checkEmpty(target) {
+    return target;
 }
 
 function moveBlock(moveType, amount) {
@@ -67,14 +90,25 @@ function moveBlock(moveType, amount) {
     renderBlocks();
 }
 
+function changeDirection() {
+    tempMovingItem.direction = (tempMovingItem.direction + 1) % 4;
+    renderBlocks();
+}
+
 //event handling
 document.addEventListener("keydown", (e) => {
     switch (e.keyCode) {
+        case 37:
+            moveBlock("left", -1);
+            break;
+        case 38:
+            changeDirection();
+            break;
         case 39:
             moveBlock("left", 1);
             break;
-        case 37:
-            moveBlock("left", -1);
+        case 40:
+            moveBlock("top", 1);
             break;
         default:
             break;
