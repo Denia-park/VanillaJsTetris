@@ -91,9 +91,6 @@ function generateNewBlock() {
 
     const blockArray = Object.entries(BLOCKS);
     const randomIndex = Math.floor(Math.random() * blockArray.length);
-    console.log(blockArray);
-    console.log(randomIndex);
-    console.log(blockArray[randomIndex][0]);
 
     movingItem.type = blockArray[randomIndex][0];
     movingItem.top = 0;
